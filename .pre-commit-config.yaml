@@ -1,0 +1,14 @@
+add_config_file: true
+repos:
+- repo: https://github.com/PyCQA/flake8
+  rev: 3.8.4
+  hooks:
+  - id: flake8
+- repo: https://github.com/psf/black
+  rev: stable
+  hooks:
+  - id: black
+    args: 
+    - --exclude="""\.git |
+      \.__pycache__|
+      \.venv|
